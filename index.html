@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Input Form</h1>
+    <div class="container">
+        <label for="asiaRitelJatinegara">Asia Ritel RX Jatinegara (dBm):</label>
+        <input type="number" id="asiaRitelJatinegara" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="ujbKarawangJatinegara">UJB Karawang RX Jatinegara (dBm):</label>
+        <input type="number" id="ujbKarawangJatinegara" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="asiaRitelCikarang">Asia Ritel RX Cikarang (dBm):</label>
+        <input type="number" id="asiaRitelCikarang" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="ujbKarawangCikarang">UJB Karawang RX Cikarang (dBm):</label>
+        <input type="number" id="ujbKarawangCikarang" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="twtaPrimary1">TWTA Primary 1 (W):</label>
+        <input type="number" id="twtaPrimary1" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="twtaPrimary2">TWTA Primary 2 (W):</label>
+        <input type="number" id="twtaPrimary2" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="beaconLevelPrimary">Beacon Level Primary (dB):</label>
+        <input type="number" id="beaconLevelPrimary" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="twtaSecondary1">TWTA Secondary 1 (W):</label>
+        <input type="number" id="twtaSecondary1" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="twtaSecondary2">TWTA Secondary 2 (W):</label>
+        <input type="number" id="twtaSecondary2" placeholder="Enter value">
+    </div>
+    <div class="container">
+        <label for="beaconLevelSecondary">Beacon Level Secondary (dB):</label>
+        <input type="number" id="beaconLevelSecondary" placeholder="Enter value">
+    </div>
+    <div class="button-container">
+        <button onclick="generateOutput()">Generate Output</button>
+        <button onclick="copyOutput()">Copy</button>
+        <button onclick="clearOutput()">Clear</button>
+        <button onclick="exitPage()">Exit</button>
+    </div>
+    <h2>Output</h2>
+    <div class="output" id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
